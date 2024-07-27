@@ -59,8 +59,11 @@ const deleteEmployeeById = async (req, res) => {
     const deleteEmployee = await Employees.findByIdAndDelete(employeeId);
 
     if (!deleteEmployee) {
-      return res.status(404).json({ error: "No product found" });
+      return res.status(404).json({ error: "No Employee found" });
     }
+
+    res.status(200).send("Deleted Employee");
+
   } catch (error) {
     console.error("Error delete employee:", error);
     res.status(500).send("Internal server error");
