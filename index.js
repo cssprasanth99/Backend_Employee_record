@@ -20,8 +20,8 @@ app.use("/user", userRoute);
 app.use("/employees", employeeRoute);
 app.use("/uploads", express.static("uploads"));
 
-app.get("/home", (req, res) => {
-  res.send("Welcome");
+app.get("/", (req, res) => {
+  res.send("Welcome to employee records");
 });
 
 // MongoDB connection
