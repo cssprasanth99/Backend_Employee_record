@@ -43,8 +43,7 @@ This is an Employee Management System that allows you to update employee informa
 
 ### Running the Application
 
-1. Start the server:
-     
+### 1. Start the server: ### 
      npm run dev
 
 2. The server will run on http://localhost:4000.
