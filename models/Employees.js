@@ -11,8 +11,13 @@ const employeeSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
+  mobile: {
+    type: String,
+    required: true,
+    unique: true,
+  },
   designation: {
-    type: [String],
+    type: String,
     enum: ["HR", "Manager", "Sales"],
   },
   gender: {

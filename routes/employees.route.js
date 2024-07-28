@@ -14,5 +14,8 @@ router.get("/uploads/:imageName", (req, res) => {
 });
 
 router.delete("/:employeeId", employeesController.deleteEmployeeById);
+router.get("/:userId/employees", employeesController.getEmployeeByUser);
+router.patch("/:employeeId", employeesController.updateEmployeeById);
+router.get("/:employeeId", employeesController.getSingleEmployeeByUser);
 
 module.exports = router;
