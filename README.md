@@ -50,12 +50,12 @@ This is an Employee Management System that allows you to update employee informa
 2. The server will run on http://localhost:4000.
 
 ## API Endpoints ##
-### Update Employee
+### Update Employee ###
     URL: PATCH /employees/:employeeId
 
     Description: Update an employee's information, including uploading an image.
 
-### Request Parameters:###
+### Request Parameters: ###
 
     employeeId (URL parameter): The ID of the employee to update.
 
